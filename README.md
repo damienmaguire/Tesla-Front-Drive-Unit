@@ -6,3 +6,5 @@ and enables full control of the inverter and motor using simple analog / digital
 23/09/17 : Released V1 schematic for the logic board. Untested. Also released pinout for the logic to igbt board interface header and Autocad dxf of the board outline with critical component locations.
 
 02/10/17 : Released V1 design files. Untested. Unproven. Educational use only.
+
+06/11/17 : V1 board bench tested and working well. No in car testing as yet.
