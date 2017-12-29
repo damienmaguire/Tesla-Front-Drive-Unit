@@ -8,3 +8,11 @@ and enables full control of the inverter and motor using simple analog / digital
 02/10/17 : Released V1 design files. Untested. Unproven. Educational use only.
 
 06/11/17 : V1 board bench tested and working well. No in car testing as yet.
+
+29/12/17 : Uploaded V2 design files for small drive unit logic board. Compatible with both front and rear small Tesla drive units.
+
+Just one change :
+
+ULN2003 replaced by NCV8401ADT for driving precharge relay and main contactor following in car testing of the large drive unit.
+
+Happy new year :)
