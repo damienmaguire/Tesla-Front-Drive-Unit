@@ -16,3 +16,5 @@ Just one change :
 ULN2003 replaced by NCV8401ADT for driving precharge relay and main contactor following in car testing of the large drive unit.
 
 Happy new year :)
+
+14/08/18 : Following some excellent testing and investigation by a european customer, V3 design files are released. Small changes to component values in the current sensor opamp circuit as well as addition of two filter capacitors in the same. Now running well in vehicle. Also uploaded working parameter file.
