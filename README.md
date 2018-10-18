@@ -18,3 +18,12 @@ ULN2003 replaced by NCV8401ADT for driving precharge relay and main contactor fo
 Happy new year :)
 
 14/08/18 : Following some excellent testing and investigation by a european customer, V3 design files are released. Small changes to component values in the current sensor opamp circuit as well as addition of two filter capacitors in the same. Now running well in vehicle. Also uploaded working parameter file.
+
+18/10/18 : Two customers reported failures of their inverter when using the V2 board. One customer reported they had fixed the issue but then refused to share the details. I have worked with the second customer in Romania on the problems. Here are some details :
+
+Root cause of the drive unit inverter failures discovered and fixed.
+NOT caused by overcurrent through the igbts but rather the combination of using 8.8kHz switching frequency through a very low inductance stator and the sudden release of the main contactor on an overcurrent detection. The small drive unit inverter works perfectly at 17.6khz switching frequency and setting tripmode to prechon ensures the pre charge resistor can provide a path back to the battery during release of the main contactor. This was tested to the Nth degree on my recent trip to Romania
+
+Working on a fix for a hardware bug that is limiting power. The tesla current sensors span +/- 1250A over a range of 0-5v with 2.5v representing 0A. Seems Tesla use the EXACT SAME hardware overcurrent detection circuit on their logic board as designed by Johannes. They set trip points at .1V and 4.9V giving a total span of 1150A. (1A=2mV). The component choice in the opamp circuit on the open source board causes a hardware overcurrent event at +850A regardless of settings above this value thus limiting power. It was this trip coupled with the above issues relating to main contactor control and switching frequency that lead to inverter deaths.
+
+Identified the hall effect current sensor used in the small drive units as the MLX91209. So at least now if I wreck one they only cost 3 Euros to replace. A V4 design will be released shortly along with details on how to modify the V2 and V3 boards to avoid this problem. 
