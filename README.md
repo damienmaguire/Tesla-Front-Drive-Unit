@@ -29,17 +29,27 @@ Working on a fix for a hardware bug that is limiting power. The tesla current se
 Identified the hall effect current sensor used in the small drive units as the MLX91209. So at least now if I wreck one they only cost 3 Euros to replace. A V4 design will be released shortly along with details on how to modify the V2 and V3 boards to avoid this problem. 
 
 28/10/18 : V4 Design files released. Major changes : 
+
 Updated current sensor opamp component values to allow the full +/-1200A swing.
+
 Deleted the encoder polarity jumper as no longer needed.
+
 Added option to fit ESP WiFi module on board (untested)
+
 Added jumper to disable RS232 Transciever (required if using on board wifi)
+
 Latest sourcecode and binaries will available from https://github.com/jsphuebner/stm32-sine
 
 V2 and V3 boards can still be used by changing the following component values : R44,R49 = 62k, R48 = 3k16.
+
 On the web interface set the following two parameters :
+
 PWMFRQ=17.6kHz
+
 Tripmode = Prechon
+
 Working and tested full parameter files will be released shortly.
+
 
 
 
