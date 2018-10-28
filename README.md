@@ -27,3 +27,19 @@ NOT caused by overcurrent through the igbts but rather the combination of using 
 Working on a fix for a hardware bug that is limiting power. The tesla current sensors span +/- 1250A over a range of 0-5v with 2.5v representing 0A. Seems Tesla use the EXACT SAME hardware overcurrent detection circuit on their logic board as designed by Johannes. They set trip points at .1V and 4.9V giving a total span of 1200A. (1A=2mV). The component choice in the opamp circuit on the open source board causes a hardware overcurrent event at +850A regardless of settings above this value thus limiting power. It was this trip coupled with the above issues relating to main contactor control and switching frequency that lead to inverter deaths.
 
 Identified the hall effect current sensor used in the small drive units as the MLX91209. So at least now if I wreck one they only cost 3 Euros to replace. A V4 design will be released shortly along with details on how to modify the V2 and V3 boards to avoid this problem. 
+
+28/10/18 : V4 Design files released. Major changes : 
+Updated current sensor opamp component values to allow the full +/-1200A swing.
+Deleted the encoder polarity jumper as no longer needed.
+Added option to fit ESP WiFi module on board (untested)
+Added jumper to disable RS232 Transciever (required if using on board wifi)
+Latest sourcecode and binaries will available from https://github.com/jsphuebner/stm32-sine
+
+V2 and V3 boards can still be used by changing the following component values : R44,R49 = 62k, R48 = 3k16.
+On the web interface set the following two parameters :
+PWMFRQ=17.6kHz
+Tripmode = Prechon
+Working and tested full parameter files will be released shortly.
+
+
+
