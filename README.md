@@ -50,6 +50,7 @@ Tripmode = Prechon
 
 Working and tested full parameter files will be released shortly.
 
+29/10/18 : V2 Design files and BOM updated for modifications and also incorrect values for temp sensor load resistors in BOM.
 
-
+Test run with modification : https://www.youtube.com/watch?v=mhGwcPWCbsA
 
