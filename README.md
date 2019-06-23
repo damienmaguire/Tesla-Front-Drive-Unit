@@ -8,6 +8,8 @@ https://github.com/jsphuebner/stm32-sine/releases
 
 Fully built and tested boards and bare PCBs available here : http://www.evbmw.com/index.php/evbmw-webshop
 
+Support forum : https://openinverter.org/forum/
+
 23/09/17 : Released V1 schematic for the logic board. Untested. Also released pinout for the logic to igbt board interface header and Autocad dxf of the board outline with critical component locations.
 
 02/10/17 : Released V1 design files. Untested. Unproven. Educational use only.
