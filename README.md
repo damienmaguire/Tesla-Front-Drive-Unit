@@ -63,3 +63,5 @@ Test run with modification : https://www.youtube.com/watch?v=mhGwcPWCbsA
 
 21/01/20 : V6 design files now released. Both fully built and partial built boards available from the EVBMW webshop : https://www.evbmw.com/index.php/evbmw-webshop
 Don't want to buy from me and support ongoing development? That's ok as this release also includes the BOM, CPL and Gerber files needed to build your own at JLCPCB : https://jlcpcb.com
+
+16/12/25 : Added current Kicad 9 project to redesign the SDU board. Work in progress.
